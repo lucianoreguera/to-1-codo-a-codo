@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perro's Club</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container content-header">
+            <div class="navbar">
+                <a href="index.html">
+                    Perro's <span>Club</span>
+                </a>
+                <div class="mobile-menu">
+                    <a href="#menu">
+                        <img src="img/barras.svg" alt="Icono Menu">
+                    </a>
+                </div>
+                <nav class="menu" id="menu">
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="galeria.html">Galeria</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contacto.html">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <h1 class="fw-300 text-center">Contacto</h1>
+    <img src="img/gallery/01.jpg" alt="Imagen principal">
+    
+    <main class="container section content-center">
+        <h2 class="fw-300 text-center">Llena el formulario de contacto</h2>
+        <form class="contact-form" action="">
+            <fieldset>
+                <legend>Información Personal</legend>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" placeholder="Tu nombre" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Tu correo electrónico" required>
+                
+                <label for="phone">Teléfono:</label>
+                <input type="tel" id="phone" placeholder="Tu teléfono" required>
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Contacto</legend>
+                <p>Como desea ser contactado:</p>
+
+                <div class="radio-contact-form">
+                    <label for="phone-contact">Teléfono</label>
+                    <input type="radio" name="contact" value="phone-contact" id="phone-contact">
+
+                    <label for="email-contact">Correo electrónico</label>
+                    <input type="radio" name="contact" value="email-contact" id="email-contact">
+                </div>
+
+                <p>Si eligió teléfono, elija la fecha y hora</p>
+                <label for="date">Fecha:</label>
+                <input type="date" id="date">
+
+                <label for="time">Hora:</label>
+                <input type="time" id="time" min="09:00" max="18:00">
+            </fieldset>
+
+            <input type="submit" value="Enviar" class="btn btn-primary">
+        </form>
+    </main>
+
+    <footer class="site-footer section">
+        <div class="container container-footer">
+            <nav class="menu">
+                <a href="nosotros.html">Nosotros</a>
+                <a href="galeria.html">Galeria</a>
+                <a href="blog.html">Blog</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+            
+            <p class="copyright">Todos los Derechos Reservados &copy;2020</p>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/7136a2161e.js" crossorigin="anonymous"></script>
+</body>
+</html>
